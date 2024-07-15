@@ -1,0 +1,22 @@
+import argparse
+
+parser = argparse.ArgumentParser(description='data')
+parser.add_argument('--batch_size', type=int, default=8)
+parser.add_argument('--path_mnist', type=str, default='data//MNIST')
+parser.add_argument('--path_cifar', type=str, default='data//CIFAR-10')
+parser.add_argument('--nrof_classes', type=int, default=10)
+parser.add_argument('--sample_type', type=str, default='default')
+parser.add_argument('--Pad', type=str, default='Pad')
+parser.add_argument('--Translate', type=str, default='Translate')
+parser.add_argument('--Scale', type=str, default='Scale')
+parser.add_argument('--RandomCrop', type=str, default='RandomCrop')
+parser.add_argument('--CenterCrop', type=str, default='CenterCrop')
+parser.add_argument('--RandomRotateImage', type=str, default='RandomRotateImage')
+parser.add_argument('--GaussianNoise', type=str, default='GaussianNoise')
+parser.add_argument('--Salt', type=str, default='Salt')
+parser.add_argument('--Pepper', type=str, default='Pepper')
+parser.add_argument('--GaussianBlur', type=str, default='GaussianBlur')
+parser.add_argument('--Normalize', type=str, default='Normalize')
+parser.add_argument('--ChangeBrightness', type=str, default='ChangeBrightness')
+
+FLAGS = parser.parse_args()
